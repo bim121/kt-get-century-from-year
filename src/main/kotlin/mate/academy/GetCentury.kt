@@ -1,5 +1,8 @@
 package mate.academy
 
-fun getCentury(year: Int) : Int {
-    return (year + 99) / 100
+private  val YEARS_IN_CENTURY = 100
+private  val OFFSET = YEARS_IN_CENTURY - 1
+
+fun getCentury(year: Int): Int {
+    return (year + OFFSET) / YEARS_IN_CENTURY
 }
